@@ -64,10 +64,15 @@ export default function EstimateRoundLength(props) {
       cumulative: parseInt(cumulative),
     };
 
-    const apiUrl = "http://127.0.0.1:5000/predict";
+    const headers = {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+    };
+
+    const apiUrl = "https://simonb17.pythonanywhere.com/predict";
 
     axios
-      .post(apiUrl, inputData)
+      .post(apiUrl, inputData, { headers })
       .then((response) => {
         setPrediction(response.data[0]);
         setNumGroups(response.data[1]);
