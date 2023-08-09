@@ -1,6 +1,5 @@
-import React, { useState } from "react";
 import "../App.css";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import EventCard from "../components/EventCard";
 
 export default function SelectEvents(props) {

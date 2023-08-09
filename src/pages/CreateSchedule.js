@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 import SelectEvents from "./SelectEvents";
 import ManageEvents from "./ManageEvents";
@@ -99,7 +99,7 @@ export default function CreateSchedule(props) {
 
   const prevPage = () => {
     if (page === 0) {
-      navigate("/");
+      navigate("/wca-schedule-maker");
     } else setPage(page - 1);
   };
 
