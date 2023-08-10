@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import WCAScheduleMaker from "./pages/WCAScheduleMaker";
 import CreateSchedule from "./pages/CreateSchedule";
 import EstimateRoundLength from "./pages/EstimateRoundLength";
+import Blindsolving from "./pages/Blindsolving";
 import "./App.css";
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
               path="/wca-schedule-maker/roundlength"
               element={<EstimateRoundLength />}
             />
+            <Route path="/blindsolving" element={<Blindsolving />} />
           </Routes>
         </BrowserRouter>
       </Container>
